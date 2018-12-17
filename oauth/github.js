@@ -11,7 +11,6 @@ module.exports = function auth(app) {
     clientSecret: config.GITHUB_CLIENTSECRET,
     callbackURL: config.OAUTH_CALLBACK,
   },
-    // (accessToken, refreshToken, profile, cb) => cb(null, { accessToken })
   (accessToken, rt, p, cb) => cb(null, { accessToken, profile: p })
   ));
 
