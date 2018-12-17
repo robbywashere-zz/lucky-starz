@@ -106,9 +106,6 @@ class A extends Component {
     }
   }
 
-  /*
-  shouldComponentUpdate(){
-  }*/
 
   render(){
     return (
