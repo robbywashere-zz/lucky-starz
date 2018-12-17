@@ -1,6 +1,6 @@
 
 const request = require('axios');
-const { pkgName } = require('../package.json').name;
+const pkgName = require('../package.json').name;
 const get = require('lodash/get');
 
 module.exports = class Github {
