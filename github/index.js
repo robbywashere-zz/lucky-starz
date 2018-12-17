@@ -1,6 +1,5 @@
 
 const request = require('axios');
-const pkgName = require('../package.json').name;
 const get = require('lodash/get');
 
 module.exports = class Github {
@@ -17,7 +16,7 @@ module.exports = class Github {
       method: 'GET',
       url: `https://api.github.com/repos/${repo.obj().owner}/${repo.obj().name}/readme`,
       headers: {
-        'User-Agent': `${pkgName}`,
+        'User-Agent': `robbywashere/lucky-starz`,
         'Authorization': `Bearer ${this.token}`
       }
     })).data.content;
